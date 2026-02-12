@@ -14,6 +14,10 @@ it would make a lot of reasons to make me not want to upload as it appears it wa
 By doing it the way of importing it yourself it makes it so i dont have to get it approved by google.
 
 
+photos of it working-><img width="1563" height="269" alt="image" src="https://github.com/user-attachments/assets/c652eded-9b7e-40a6-aa4b-c7a0f1daf154" />
+
+
+
 
 
 INSTALL STEPS!!!!!!!
