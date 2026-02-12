@@ -43,9 +43,9 @@ Step 4: Click on "load unpacked" in the top left corner and select on the downlo
 
 
 step 5 close the chrome://extensions/ and click on the puzzle piece in the top left corner and click on pin for "retro-vision" now by clicking on the grey r in the top left you can turn it on and off
-<img width="310" height="179" alt="image" src="https://github.com/user-attachments/assets/a5b56d9e-962a-4097-9a78-bf6e91bdde68" />
-<img width="310" height="179" alt="image" src="https://github.com/user-attachments/assets/ca0663bb-f6c8-4217-a401-b409182d53b3" />
+<img width="85" height="43" alt="image" src="https://github.com/user-attachments/assets/93b8ac2c-83b6-4201-8d29-8b26931db699" />
 
+<img width="310" height="179" alt="image" src="https://github.com/user-attachments/assets/a5b56d9e-962a-4097-9a78-bf6e91bdde68" />
 
 
 REMEMBER IT WILL START OFF MEANING AFTER TURNING IT ON FOR THE EFFECT TO WORK YOU MUST REFRESH THAT PAGE!!!!!
