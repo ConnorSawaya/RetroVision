@@ -1,0 +1,72 @@
+html.retro-active::before { 
+    content: ""; 
+    display: block;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.18) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.04));
+    z-index: 2147483647;
+    background-size: 100% 3px, 3px 100%;
+    pointer-events: none;
+    animation: retro-flicker 0.15s infinite; /* Addss The scanlines Flicker Effect */
+}
+html.retro-active {
+    filter: contrast(115%) brightness(105%) saturate(80%) sepia(10%) blur(0.25px) !important;
+}
+
+html.retro-active::after { /*/ Screen Overlay */
+    content: "";
+    position: fixed; /* Covers the Whole Screen */
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: radial-gradient(circle rgba(0,0,0,0) 65%, rgba(0,0,0,0.35)125%);
+    z-index: 2147483646; /*/ just below the scanlines */
+    pointer-events: none;
+}
+
+html.retro-active * { /*/ For All Elements */
+    border-radius: 0 !important; 
+    box-shadow: none !important;
+    -webkit-font-smoothing: none !important;
+}
+
+html.retro-active button, /* For Buttons some*/
+html.retro-active input[type="submit"],
+html.retro-active input[type="button"],
+html.retro-active .btn { /* For Common Button Classes */
+    /* Styles For buttons to make them look like the old windows buttons */ 
+
+    appearance: none !important;
+    background: #c0c0c0 !important;
+    color: black !important;
+    font-family: "Tahoma", sans-serif !important;
+    font-size: 13px !important;
+    padding: 4px 10px !important;
+    border-top: 2px solid #ffffff !important;
+    border-left: 2px solid #ffffff !important;
+    border-bottom: 2px #404040 solid !important;
+    border-right: 2px solid #404040 !important;
+    box-shadow: inset 1px 1px #dfdfdf, 1px 1px 0px #000000 !important;
+    cursor: pointer !important;
+    text-transform: none !important; /* Disables upercase*/
+}
+
+html.retro-active button:active, /*/ For Active Buttons */
+html.retro-active input[type="submit"]:active {
+    /*/ Styles for active buttons To make them look like they are being pressed */
+
+    border-top: 2px solid #404040 !important;
+    border-left: 2px solid #404040 !important;
+    border-bottom: 2px solid #ffffff !important;
+    border-right: 2px solid #ffffff !important;
+    padding: 5px 9px 3px 11px !important;
+    box-shadow: inset 1px 1px #000000 !important;
+}
+html.retro-active img { /* For Images */ 
+    image-rendering: pixelated !important; /*/ Makes The images looks pixelated */
+    filter: saturate(90%) contrast(110%) !important; /* Changes the colors of the image to make it look older/retro*/
+}
+@keyframes retro-flicker { /* Does the flicker effect on the scanlines */
+    0% { opacity: 0.92; }
+    50% { opacity: 0.96; }
+    100% { opacity: 0.93; }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> /*/ Retro Windows Style for popup /*/
+        body {
+            width: 180px; margin: 0; padding: 2px; background: #c0c0c0;
+            border: 2px solid; border-color: #dfdfdf #404040 #404040 #dfdfdf;
+            font-family: sans-serif;
+        }
+        .title-bar { /*/ Title Bar Style /*/
+            background: linear-gradient(90deg, #000080, #1084d0);
+            color: white; padding: 3px 5px; font-weight:bold; font-size: 11px;
+        }
+        .content { padding: 15px; text-align: center;} /*/ Centering the button and  padding for better lookss /*/
+
+        .retro-btn {
+            background: #c0c0c0; border-top: 2px solid #fff; border-left: 2px solid #fff;
+            border-bottom: 2px solid #404040; border-right: 2px solid #404040; /*/ Classic Button Style /*/
+            box-shadow: 1px 1px 0px #000; padding: 5px; width: 100%; cursor: pointer; /*/ Classic Button Style /*/
+        }
+
+        .retro-btn:active {
+            border-top: 2px solid #404040; border-left: 2px solid #404040; /* inverts the button borders to create a cool effect that shows u clicked it*/
+            border-bottom: 2px solid #fff; border-right: 2px solid #fff;  /* inverts the button borders to create a cool effect that shows u clicked it*/
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">Retro_Setting.exe</div>
+    <div class="content">
+        <button id="toggleBtn" class = "retro-btn"> MODE: OFF </button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
