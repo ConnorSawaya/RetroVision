@@ -19,7 +19,8 @@ By doing it the way of importing it yourself it makes it so i dont have to get i
 INSTALL STEPS!!!!!!!
 To Get This Extension working all you need to do is 
 
-Step 1: Download the zip file in this Repo
+Step 1: Download the zip file in this Repo<img width="659" height="38" alt="image" src="https://github.com/user-attachments/assets/dd991495-d00d-4cf9-9842-6f0569858911" />
+
 
 
 
