@@ -23,7 +23,7 @@ photos of it working-><img width="1563" height="269" alt="image" src="https://gi
 INSTALL STEPS!!!!!!!
 To Get This Extension working all you need to do is 
 
-Step 1: Download the zip file in this Repo<img width="659" height="38" alt="image" src="https://github.com/user-attachments/assets/dd991495-d00d-4cf9-9842-6f0569858911" />
+Step 1: Download the .crx file in this Repo<img width="659" height="38" alt="image" src="https://github.com/user-attachments/assets/dd991495-d00d-4cf9-9842-6f0569858911" />
 
 
 
@@ -41,15 +41,12 @@ Step 3: Turn on Dev mode in the top right hand corner <img width="1371" height="
 
 
 
-Step 4: Click on "load unpacked" in the top left corner and select on the download zip file <img width="1974" height="1018" alt="image" src="https://github.com/user-attachments/assets/2e904087-616f-4e02-830c-996d824b31e1" />
+Step 4: Now Drag And Drop The .crx File from before into this main area  <img width="2880" height="1710" alt="image" src="https://github.com/user-attachments/assets/6193609f-16e1-452e-8b19-378f474ca057" />
 
 
+step 5 Click on add extension and scroll to the top of the page to where it says "safety Check" then click on 3 dots next to retro vision on the right side of the screen and click keep this extension(google is telling you that because i have not uploaded it to the store so its a safety check)
+<img width="2872" height="856" alt="image" src="https://github.com/user-attachments/assets/5d511440-e92d-4007-afcc-2423f019330b" />
 
-
-step 5 close the chrome://extensions/ and click on the puzzle piece in the top left corner and click on pin for "retro-vision" now by clicking on the grey r in the top left you can turn it on and off
-<img width="85" height="43" alt="image" src="https://github.com/user-attachments/assets/93b8ac2c-83b6-4201-8d29-8b26931db699" />
-
-<img width="310" height="179" alt="image" src="https://github.com/user-attachments/assets/a5b56d9e-962a-4097-9a78-bf6e91bdde68" />
 
 
 REMEMBER IT WILL START OFF MEANING AFTER TURNING IT ON FOR THE EFFECT TO WORK YOU MUST REFRESH THAT PAGE!!!!!
