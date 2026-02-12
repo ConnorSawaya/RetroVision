@@ -23,7 +23,8 @@ photos of it working-><img width="1563" height="269" alt="image" src="https://gi
 INSTALL STEPS!!!!!!!
 To Get This Extension working all you need to do is 
 
-Step 1: Download the .crx file in this Repo<img width="659" height="38" alt="image" src="https://github.com/user-attachments/assets/dd991495-d00d-4cf9-9842-6f0569858911" />
+Step 1: Download the .crx file in this Repo<img width="1764" height="82" alt="image" src="https://github.com/user-attachments/assets/a3576e29-5528-494f-9a6a-2b4c17e78c6d" />
+
 
 
 
