@@ -24,22 +24,28 @@ Step 1: Download the zip file in this Repo<img width="659" height="38" alt="imag
 
 
 
-Step 2: Go to chrome://extensions/ 
+Step 2: Go to chrome://extensions/ <img width="866" height="30" alt="image" src="https://github.com/user-attachments/assets/15244861-ca40-4aa9-b293-6a6bba98e584" />
 
 
 
 
 
-Step 3: Turn on Dev mode in the top right hand corner
+
+Step 3: Turn on Dev mode in the top right hand corner <img width="1371" height="209" alt="image" src="https://github.com/user-attachments/assets/78383751-f9eb-46ca-8be9-65f39c36782f" />
 
 
 
 
-Step 4: Click on "load unpacked" in the top left corner and select on the download zip file
+
+Step 4: Click on "load unpacked" in the top left corner and select on the download zip file <img width="1974" height="1018" alt="image" src="https://github.com/user-attachments/assets/2e904087-616f-4e02-830c-996d824b31e1" />
+
 
 
 
 step 5 close the chrome://extensions/ and click on the puzzle piece in the top left corner and click on pin for "retro-vision" now by clicking on the grey r in the top left you can turn it on and off
+<img width="310" height="179" alt="image" src="https://github.com/user-attachments/assets/a5b56d9e-962a-4097-9a78-bf6e91bdde68" />
+<img width="310" height="179" alt="image" src="https://github.com/user-attachments/assets/ca0663bb-f6c8-4217-a401-b409182d53b3" />
+
 
 
 REMEMBER IT WILL START OFF MEANING AFTER TURNING IT ON FOR THE EFFECT TO WORK YOU MUST REFRESH THAT PAGE!!!!!
