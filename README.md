@@ -20,8 +20,14 @@ photos of it working-><img width="1563" height="269" alt="image" src="https://gi
 
 
 
-INSTALL STEPS!!!!!!!
-To Get This Extension working all you need to do is 
+INSTALL STEPS (RECOMMENDED — Load unpacked, works in modern Chrome)
+1. Download/clone this folder so `manifest.json`, `popup.html`, `content.js`, `style.css`, `icons/` are together.
+2. Go to chrome://extensions/
+3. Turn on Developer mode (top right).
+4. Click "Load unpacked" and select this folder.
+5. Pin Retro-Vison, open any page, click the popup, press MODE: ON. Refresh the page if the effect needs it.
+
+LEGACY .crx METHOD (may be blocked by modern Chrome)
 
 Step 1: Download the .crx file in this Repo<img width="1764" height="82" alt="image" src="https://github.com/user-attachments/assets/a3576e29-5528-494f-9a6a-2b4c17e78c6d" />
 

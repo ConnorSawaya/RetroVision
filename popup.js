@@ -13,10 +13,17 @@ btn.onclick = () => {  // when the button is clicked we toggle the start of retr
             
             chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
                 if (tabs[0]) {
-                    chrome.tabs.sendMessage(tabs[0].id, {action: "toggleRetro", enabled: newState})
-                    .catch(() => {
-                        console.log("Refresh The Page To Apply Changes!!") // In Case the Content Script Is not loaded, the user would need to refresh cuz google extensions work that dat
-                    });
+                    try {
+                        const reply = chrome.tabs.sendMessage(tabs[0].id, {action: "toggleRetro", enabled: newState, isEnabled: newState});
+                        // MV3 Chrome returns a Promise; older callback style returns undefined
+                        if (reply && typeof reply.catch === "function") {
+                            reply.catch(() => {
+                                console.log("Refresh The Page To Apply Changes!!"); // content script not loaded yet
+                            });
+                        }
+                    } catch (e) {
+                        console.log("Refresh The Page To Apply Changes!!");
+                    }
                 }
             });
         });
