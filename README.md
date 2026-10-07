@@ -1,60 +1,67 @@
 # RetroVision
-RetroVision is a google extension that turns your browser to look retro style.!!! I was planning on uploading it to the google extension store.. but they practically want the decleration of indepence plus 2 days!!!! (also 5 dollars) DETAILS ON HOW TO GET IT WORKING BELOW
-Coded in CSS, HTML, JS, And technically json
 
-It basically injects custom themes i made so almost every website looks just like it did 10 years ago!!
+A lightweight Chrome extension that gives modern websites a retro desktop-style makeover with scanlines, pixelated media, classic controls, and a one-click on/off toggle.
 
-I did not put this on the google extensions store for a few reasons,
-Google was being really annoying about privicy data even though im not collecting any of it,
-Google was trying to put me through in depth review saying it will delay publishing
-it would make a lot of reasons to make me not want to upload as it appears it was made for more developers not small hobbyist.
-(also i heard it takes a really long time for them to approve it)
+![RetroVision preview](https://github.com/user-attachments/assets/c652eded-9b7e-40a6-aa4b-c7a0f1daf154)
 
+## Features
 
-By doing it the way of importing it yourself it makes it so i dont have to get it approved by google.
+- Toggle the retro theme from the extension popup.
+- Applies the theme across normal webpages with a content script.
+- Remembers the enabled/disabled state with `chrome.storage.local`.
+- Uses a small Manifest V3 codebase built with HTML, CSS, and JavaScript.
+- No account or backend is required.
 
+## Install
 
-photos of it working-><img width="1563" height="269" alt="image" src="https://github.com/user-attachments/assets/c652eded-9b7e-40a6-aa4b-c7a0f1daf154" />
+RetroVision is not currently published in the Chrome Web Store, so the recommended installation method is **Load unpacked**.
 
+1. Clone or download this repository.
+2. Open `chrome://extensions/` in Chrome.
+3. Enable **Developer mode**.
+4. Click **Load unpacked**.
+5. Select the repository folder containing `manifest.json`.
+6. Pin RetroVision from the extensions menu.
+7. Open a webpage and use the extension popup to switch **MODE: ON**.
 
+Some pages may need to be refreshed after the extension is first installed so the content script can load.
 
+## How it works
 
+`content.js` adds or removes the `retro-active` class on the page. `style.css` contains the visual theme, while `popup.js` controls the toggle and saves its state locally.
 
-INSTALL STEPS (RECOMMENDED — Load unpacked, works in modern Chrome)
-1. Download/clone this folder so `manifest.json`, `popup.html`, `content.js`, `style.css`, `icons/` are together.
-2. Go to chrome://extensions/
-3. Turn on Developer mode (top right).
-4. Click "Load unpacked" and select this folder.
-5. Pin Retro-Vison, open any page, click the popup, press MODE: ON. Refresh the page if the effect needs it.
+```text
+popup.html / popup.js
+        │
+        ├─ saves toggle state with chrome.storage.local
+        │
+        └─ sends toggle message to the active tab
+                         │
+                         ▼
+                    content.js
+                         │
+                         ▼
+                  retro-active class
+                         │
+                         ▼
+                     style.css
+```
 
-LEGACY .crx METHOD (may be blocked by modern Chrome)
+## Project structure
 
-Step 1: Download the .crx file in this Repo<img width="1764" height="82" alt="image" src="https://github.com/user-attachments/assets/a3576e29-5528-494f-9a6a-2b4c17e78c6d" />
+```text
+manifest.json   Chrome Manifest V3 configuration
+popup.html      Extension popup
+popup.js        Toggle and saved-state logic
+content.js      Applies/removes the retro mode
+style.css       Retro visual theme
+icons/          Extension icons
+```
 
+## Permissions
 
+The extension uses Chrome storage for the toggle state and page access so the visual theme can be applied to websites. The project has no account system or hosted backend.
 
+## Legacy CRX
 
-
-Step 2: Go to chrome://extensions/ <img width="866" height="30" alt="image" src="https://github.com/user-attachments/assets/15244861-ca40-4aa9-b293-6a6bba98e584" />
-
-
-
-
-
-
-Step 3: Turn on Dev mode in the top right hand corner <img width="1371" height="209" alt="image" src="https://github.com/user-attachments/assets/78383751-f9eb-46ca-8be9-65f39c36782f" />
-
-
-
-
-
-Step 4: Now Drag And Drop The .crx File from before into this main area  <img width="2880" height="1710" alt="image" src="https://github.com/user-attachments/assets/6193609f-16e1-452e-8b19-378f474ca057" />
-
-
-step 5 Click on add extension and scroll to the top of the page to where it says "safety Check" then click on 3 dots next to retro vision on the right side of the screen and click keep this extension(google is telling you that because i have not uploaded it to the store so its a safety check)
-<img width="2872" height="856" alt="image" src="https://github.com/user-attachments/assets/5d511440-e92d-4007-afcc-2423f019330b" />
-
-
-
-REMEMBER IT WILL START OFF MEANING AFTER TURNING IT ON FOR THE EFFECT TO WORK YOU MUST REFRESH THAT PAGE!!!!!
-:)
+A packaged `.crx` is included in the repository, but modern Chrome versions may block manually installed CRX files. **Load unpacked** is the recommended method for local installation.
